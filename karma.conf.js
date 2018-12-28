@@ -9,7 +9,7 @@ module.exports = function(config) {
     ],
     preprocessors: {
     },
-    reporters: ['progress'],
+    reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
