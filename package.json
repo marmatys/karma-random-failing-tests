@@ -1,0 +1,24 @@
+{
+  "name": "karma-random-failing-tests",
+  "version": "1.0.0",
+  "description": "Random failing tests in Karma/Jasmine with custom reporter",
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "Karma",
+    "Jasmine",
+    "TDD",
+    "flaky",
+    "reporter",
+    "radom"
+  ],
+  "author": "Marcin Armatys",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1"
+  }
+}
