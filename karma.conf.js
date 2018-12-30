@@ -1,3 +1,5 @@
+const karmaJasmineSeedReporter = require('./scripts/karma-jasmine-seed-reporter');
+
 module.exports = function(config) {
   config.set({
     basePath: '',
@@ -7,9 +9,15 @@ module.exports = function(config) {
     ],
     exclude: [
     ],
+    plugins: [
+      require('karma-jasmine'),
+      require('karma-chrome-launcher'),
+      require('karma-spec-reporter'),
+      karmaJasmineSeedReporter
+    ],
     preprocessors: {
     },
-    reporters: ['spec'],
+    reporters: ['spec', 'jasmine-seed'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
