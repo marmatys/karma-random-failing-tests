@@ -15,6 +15,12 @@ module.exports = function(config) {
       require('karma-spec-reporter'),
       karmaJasmineSeedReporter
     ],
+    client: {
+      jasmine: {
+        random: true,
+        seed: 95321
+      }
+    },
     preprocessors: {
     },
     reporters: ['spec', 'jasmine-seed'],
