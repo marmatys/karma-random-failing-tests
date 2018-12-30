@@ -7,6 +7,10 @@ describe('UserService', () => {
     userService = new UserService(http);
   });
 
+  afterEach(() => {
+    sessionStorage.clear();
+  });
+
   it('currentUser should be empty when no data is fetched', () => {
     const user = userService.currentUser;
 
