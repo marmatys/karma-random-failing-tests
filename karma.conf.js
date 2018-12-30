@@ -17,8 +17,7 @@ module.exports = function(config) {
     ],
     client: {
       jasmine: {
-        random: true,
-        seed: 95321
+        random: true
       }
     },
     preprocessors: {
